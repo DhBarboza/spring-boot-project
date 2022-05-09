@@ -26,5 +26,5 @@ create table uau_usuario_moto (
   aut_id bigint unsigned not null,
   primary key (usr_id, aut_id),
   foreign key aut_usuario_fk (usr_id) references usr_usuario (usr_id),
-  foreign key aut_moto_fk (aut_id) references aut_moto (usr_id)
+  foreign key aut_moto_fk (aut_id) references aut_moto (aut_id)
 );
